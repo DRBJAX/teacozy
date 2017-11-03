@@ -1,0 +1,167 @@
+html {
+	background-color: white;
+}
+
+body, body * {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	color: seashell;
+}
+
+body {
+	width: 1300px;
+	font-family: Helvetica;
+	margin: 0 auto;
+	opacity: 0.9;
+	background-color: #000000;
+}
+/* ---------- Flexbox Primary Styling ---------- */
+header, main, main > *, #top_sec div, .small_images, .image_combo, .loc_container, .text_square, footer.top { 
+	display: flex;
+}
+
+main, #top_sec div, #mid_sec, #bottom_sec, .image_combo, .text_square, footer { 
+	flex-direction: column;
+}
+
+header, main, #top_sec, #top_sec div, #mid_sec, .image_combo, #bottom_sec, .text_square, .footer.top {
+	align-items: center;
+}
+
+#top_sec, .small_images.bottom, .footer.bottom {
+	justify-content: center;
+}
+
+#top_sec div, .text_square {
+	justify-content: space-around;
+}
+/* ---------- Width 100%---------- */
+main, #top_sec div, .small_images, .footer {
+	width: 100%;
+}
+/* ---------- Background-Color ---------- */
+header, main, #top_sec div, .text_square, .footer {
+	background-color: #000000;
+}
+/* ---------- Background ---------- */
+#top_sec h2, #top_sec h4, #mid_sec h2, #mid_sec h4, .loc_container {
+	background: none;
+}
+/* ---------- Header ---------- */
+header {
+	width: inherit;
+	height: 70px;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+}
+
+header img {
+	padding-left: 10px;
+}
+
+header ul {
+	margin-left: 800px;
+}
+
+header li {
+	display: inline;
+}
+
+header li:not(:last-child) {
+	margin-right: 20px;
+}
+
+header li:last-child {
+	margin-right: 10px;
+}
+/* ---------- Main Section - Top ----------*/
+main {
+	padding-top: 70px;
+}
+
+#top_sec {
+	width: 92.31%;
+	height: 700px;
+	background-image: url("../images/img-mission-background2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#top_sec div {
+	height: 105px;
+}
+/* ---------- Main Section - Middle ----------*/
+#mid_sec {
+	width: 76.92%;
+	padding-top: 80px;
+}
+
+#mid_sec h2, #mid_sec h4 {
+	padding-bottom: 25px;
+}
+
+.small_images.top {
+	justify-content: space-between;
+}
+
+.small_images.bottom .image_combo {
+	padding: 0 25px 0 25px;
+}
+
+.image_combo img {
+	padding-bottom: 10px;
+}
+/* ---------- Main Section - Bottom ----------*/
+#bottom_sec {
+	justify-content: flex-start;
+	width: 92.31%;
+	height: 500px;
+	background-image: url("../images/img-locations-background3.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 50px;
+}
+
+#locations {
+	margin: 50px 0 15px;
+}
+
+.text_square {
+	width: 300px;
+	height: 280px;
+	opacity: 1.0;
+}
+.text_square:nth-child(2) {
+	margin: 0 40px;
+}
+/* ---------- Footer ----------*/
+.footer.top {
+	height: 200px;
+}
+
+.footer.top h2 {
+	margin: 15px 0 40px;
+}
+
+.footer.top h5 {
+	margin-bottom: 25px;
+}
+
+.footer.bottom {
+	height: 50px;
+}
+
+.footer.bottom h5 {
+	margin-left: 20px;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+
+
